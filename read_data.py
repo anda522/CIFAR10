@@ -22,6 +22,7 @@ class MyData(Dataset):
 
 
 if __name__ == '__main__':
+    # train data's path
     root_path = "D:\\code\\pytorch_learning\\CIFAR10\\dataset\\val"
     label = "frog"
 
