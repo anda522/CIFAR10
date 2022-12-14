@@ -65,7 +65,7 @@ class MyModel(nn.Module):
         return x
 
 
-train_dataset = torchvision.datasets.CIFAR10('../dataset', train=True, transform=torchvision.transforms.ToTensor(),
+train_dataset = torchvision.datasets.CIFAR10('./dataset/CIFAR', train=True, transform=torchvision.transforms.ToTensor(),
                                              download=True)
 train_dataloader = DataLoader(train_dataset, batch_size=64)
 

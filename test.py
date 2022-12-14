@@ -1,8 +1,8 @@
 import torch
 import torchvision
 from PIL import Image
-from CIFAR10.model import MyModel
-from CIFAR10.read_data import MyData
+from model import MyModel
+from read_data import MyData
 import os
 
 ans = ["airplane", "automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"]

@@ -33,9 +33,9 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # 获取每一个 img数据 和 label
 # 训练数据集
-train_data = torchvision.datasets.CIFAR10("../dataset", train=True, transform=torchvision.transforms.ToTensor(),
+train_data = torchvision.datasets.CIFAR10("./dataset", train=True, transform=torchvision.transforms.ToTensor(),
                                           download=True)
-test_data = torchvision.datasets.CIFAR10("../dataset", train=False, transform=torchvision.transforms.ToTensor(),
+test_data = torchvision.datasets.CIFAR10("./dataset", train=False, transform=torchvision.transforms.ToTensor(),
                                          download=True)
 
 print("训练数据集长度为:{}".format(len(train_data)))
