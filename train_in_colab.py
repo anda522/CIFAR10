@@ -1,5 +1,5 @@
 """
-此文件为单文件，在colab平台训练使用
+此文件为单文件，在Google Colab平台训练使用
 """
 
 import torch

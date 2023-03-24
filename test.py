@@ -15,7 +15,7 @@ labels_dir = os.listdir(root_dir)
 trans = torchvision.transforms.Compose([torchvision.transforms.Resize((32, 32)),
                                         torchvision.transforms.ToTensor()])
 
-model = torch.load("./weights/model67.8.pth")
+model = torch.load("./weights/model70.pth")
 
 tot_num = 0
 tot_accuracy = 0

@@ -35,7 +35,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 # 设置网络训练参数
 total_train_step = 0
 total_test_step = 0
-epoch = 5
+epoch = 400
 
 writer = SummaryWriter("./logs/scalar")
 

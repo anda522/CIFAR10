@@ -28,9 +28,9 @@ if __name__ == '__main__':
     print(model)
     input_data = torch.ones((64, 3, 32, 32))
 
-    writer = SummaryWriter("./logs/model")
-    writer.add_graph(model, input_data)
-    writer.close()
+    # writer = SummaryWriter("./logs/model")
+    # writer.add_graph(model, input_data)
+    # writer.close()
 
     output_data = model(input_data)
     print(output_data.shape)
