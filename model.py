@@ -1,6 +1,5 @@
 from torch import nn
 import torch
-from torch.utils.tensorboard import SummaryWriter
 
 
 class MyModel(nn.Module):
@@ -8,13 +7,19 @@ class MyModel(nn.Module):
         super(MyModel, self).__init__()
         self.model = nn.Sequential(
             nn.Conv2d(3, 32, 5, 1, 2),
+            nn.ReLU(),
             nn.MaxPool2d(2),
             nn.Conv2d(32, 32, 5, 1, 2),
+            nn.ReLU(),
             nn.MaxPool2d(2),
             nn.Conv2d(32, 64, 5, 1, 2),
+            nn.ReLU(),
             nn.MaxPool2d(2),
+            nn.Dropout(0.2),
             nn.Flatten(),
             nn.Linear(64 * 4 * 4, 64),
+            nn.ReLU(),
+            nn.Dropout(0.2),
             nn.Linear(64, 10)
         )
 

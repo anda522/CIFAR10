@@ -10,6 +10,7 @@ class MyData(Dataset):
         self.path = os.path.join(root_dir, label)
         self.img_names = os.listdir(self.path)
 
+    # 实例对象可迭代
     def __getitem__(self, index):
         img_name = self.img_names[index]
         img_path = os.path.join(self.path, img_name)
